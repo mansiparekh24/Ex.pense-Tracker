@@ -1,0 +1,100 @@
+/* 🌌 Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("{{ url_for('static', filename='background.jpg') }}") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* 🔥 Navbar Styling */
+.navbar {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    color: #ddd !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ff4b2b !important;
+}
+
+/* 🔵 Button Styling */
+button, .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(255, 75, 43, 0.6);
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 75, 43, 0.9);
+}
+
+/* 🔲 Input Fields */
+input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff4b2b;
+    box-shadow: 0px 0px 10px rgba(255, 75, 43, 0.8);
+    outline: none;
+}
+
+/* 📊 Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+}
+
+/* 🌟 Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #aaa;
+}
